@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+}
+
+.container .title{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: orangered;
+    color: white;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0px 4px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    border-bottom: 1px solid white;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-section{
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-section .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+
+.profile-picture{
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+    border-radius: 8px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-image: url('../img/profile.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.profile-picture:hover{
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+}
+
+.name{
+    font-size: 36px;
+    margin-top:32px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.title-container{
+    font-size: 32px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+.cta-button{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: orangered;
+    border-radius: 8px;
+    margin-top: 32px;
+    color: white;
+}
+
+.about-us{
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-us .content{
+    width: 50%;
+    height: 500px;
+}
+
+.about-us .about-image{
+    background-color: rgb(173, 169, 169);
+    border-radius: 8px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-image: url('../img/carlos.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us .about-description{
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.about-description h2,
+.about-description p{
+    margin-bottom: 20px;
+}
+
+.about-description a{
+    padding: 12px 24px;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+
+/* untuk tablet */
+@media(max-width: 1023px){
+    nav{
+        padding: 0px 40px;
+    }
+
+    .container{
+        padding: 20px 40px;
+    }
+}
+
+/* untuk mobile */
+@media(max-width: 767px){
+    .menu{
+        display: none;
+    }
+
+    .container .title{
+        font-size: 18px;
+    }
+
+    .about-us .content{
+        width: 100%;
+        height: auto;
+    }
+
+    .about-us .about-image{
+        height: 300px !important;
+    }
+
+    .about-us .about-description{
+        min-height: 500px;
+        padding: 20px 12px;
+    }
+    
+}
+

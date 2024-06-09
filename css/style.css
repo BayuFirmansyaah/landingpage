@@ -1,0 +1,72 @@
+/* ROOT CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+p{
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+.container{
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+.double-height{
+    min-height: 300px;
+}
+
+.box{
+    width: calc(100%/3);
+    height: 150px;
+    flex-basis: 1;
+    background-color: salmon;
+    border: 1px solid white;
+}
+
+.justify-start{
+    justify-content: start;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-arround{
+    justify-content: space-around;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-end{
+    align-items: end;
+}
